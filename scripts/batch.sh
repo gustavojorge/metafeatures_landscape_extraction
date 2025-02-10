@@ -1,6 +1,6 @@
 #!/bin/bash
 
-script="./main.sh"
+script="./main_features.sh"
 create_folders="./smaller_scripts/create_folders.sh"
 
 echo "Running script 1 = create_folders.sh"
