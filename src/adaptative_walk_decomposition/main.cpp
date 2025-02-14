@@ -64,7 +64,7 @@ vector<double> decomposition_extraction(vector<vector<LandscapeElement>> &landsc
   return mo_features_extraction(metrics);
 }
 
-void AP_decomposition_main(int qtd_of_landscapes, int walk_lenght, int number_of_neighbors){
+void AP_decomposition_main(int qtd_of_landscapes, int number_of_neighbors){
 
   //Building the lambda vector, ie, the vector of weights to each subproblem i
   lambda_vector = build_weight_vector_metafeatures(qtd_of_landscapes);
@@ -103,7 +103,6 @@ int main(int argc, char* argv[]){
 
   cout << "Instance: " << instance << endl << endl;
 
-  cout << "Walk lengh: " << walk_length << endl;
   cout << "Maximum neighbors: " << num_neighbors << endl;
   cout << "Percentage of neighbors: " << percent_neighbors << endl;
   cout << "Total number of neighbors analyzed: " << num_neighbors * percent_neighbors << endl << endl;
@@ -121,7 +120,7 @@ int main(int argc, char* argv[]){
 
   cout << "Run time: " << endl; 
 
-  AP_decomposition_main(size_of_population, walk_length, num_neighbors * percent_neighbors);
+  AP_decomposition_main(size_of_population, num_neighbors * percent_neighbors);
 
   cout << "TOTAL NUMBER OF AVALIATIONS: " << *countReval;
 }

@@ -59,7 +59,7 @@ vector<double> dominance_extraction(vector<LandscapeElement> &landscape){
   return mo_features_extraction_pareto(metric);
 }
 
-void AP_pareto_main(int qtd_of_landscapes, int walk_lenght, int number_of_neighbors){
+void AP_pareto_main(int qtd_of_landscapes, int number_of_neighbors){
 
   auto single_adaptive_walk_P = adaptative_walk_pareto(number_of_neighbors, pareto_next_solution);
 
@@ -81,7 +81,6 @@ int main(int argc, char* argv[]){
 
   cout << "Instance: " << instance << endl << endl;
 
-  cout << "Walk lengh: " << walk_length << endl;
   cout << "Maximum neighbors: " << num_neighbors << endl;
   cout << "Percentage of neighbors: " << percent_neighbors << endl;
   cout << "Total number of neighbors analyzed: " << num_neighbors * percent_neighbors << endl << endl;
@@ -99,7 +98,7 @@ int main(int argc, char* argv[]){
 
   cout << "Run time: " << endl; 
 
-  AP_pareto_main(size_of_population, walk_length, num_neighbors * percent_neighbors);
+  AP_pareto_main(size_of_population, num_neighbors * percent_neighbors);
   
   cout << endl;
 
