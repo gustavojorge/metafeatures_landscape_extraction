@@ -41,7 +41,6 @@ int defaultDomPace = 100;
 string folder_name_adaptative_walk;
 string folder_name_random_walk;
 vector<LandscapeElement> *updated_single_walk;
-int walk_length = 8;
 float percent_neighbors = 1.0;
 
 vector<pair<double, double>> lambda_vector;
