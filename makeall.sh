@@ -3,15 +3,15 @@
 directories=(
     "./src/adaptative_walk_decomposition"
     "./src/adaptative_walk_pareto"
-    "./src/random_walk_decomposition"
-    "./src/random_walk_pareto"
+    # "./src/random_walk_decomposition"
+    # "./src/random_walk_pareto"
 )
 
 output_files=(
     "adaptative_walk_decomposition"
     "adaptative_walk_pareto"
-    "random_walk_decomposition"
-    "random_walk_pareto"
+    # "random_walk_decomposition"
+    # "random_walk_pareto"
 )
 
 destination="./scripts/exe"
@@ -52,8 +52,8 @@ scripts=(
     "adaptative_walk_decomposition.sh"
     "adaptative_walk_pareto.sh"
     "create_folders.sh"
-    "random_walk_decomposition.sh"
-    "random_walk_pareto.sh"
+    # "random_walk_decomposition.sh"
+    # "random_walk_pareto.sh"
 )
 
 if [[ ! -d "$scripts_dir" ]]; then
@@ -75,5 +75,8 @@ done
 cd .. || { echo "Error returning to './scripts'"; exit 1; }
 chmod +x main.sh
 echo "Permissions set for: main.sh"
+
+chmod +x batch.sh
+echo "Permissions set for: batch.sh"
 
 echo "Make All: Process completed successfully!"
