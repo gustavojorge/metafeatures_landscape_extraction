@@ -38,6 +38,7 @@ bool limitReached = false;
 int limit = 500000;
 int *countReval = &countDecomp;
 int defaultDomPace = 100;
+int walk_length = 8;
 string folder_name_adaptative_walk;
 string folder_name_random_walk;
 vector<LandscapeElement> *updated_single_walk;

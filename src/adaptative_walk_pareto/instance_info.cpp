@@ -71,7 +71,7 @@ void get_instance_info(int argc, char* argv[]){
         instance = (string) argv[1];
     } else if(argc == 3){
         instance = (string) argv[1];
-        percent_neighbors = atoi(argv[2]);
+        percent_neighbors = stof(argv[2]);
         folder_name_adaptative_walk = "r" + string(argv[2]);
     } else if(argc == 4){
         instance = (string) argv[1];
