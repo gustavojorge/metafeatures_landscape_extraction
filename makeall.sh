@@ -10,8 +10,8 @@ directories=(
 output_files=(
     "adaptative_walk_decomposition"
     "adaptative_walk_pareto"
-    # "random_walk_decomposition"
-    # "random_walk_pareto"
+    "random_walk_decomposition"
+    "random_walk_pareto"
 )
 
 destination="./scripts/exe"
